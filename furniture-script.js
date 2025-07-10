@@ -1,46 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = [
                 {
-                    id: 1,
-                    name: 'Modern Nordic Sofa',
-                    description: 'A comfortable 3-seater sofa with clean lines and soft fabric upholstery, perfect for a contemporary living space. Durable wooden frame and plush cushions.',
-                    price: '₹25,000',
-                    image: sec='pic1.png' // Warm brown/white theme
-                },
-                {
-                    id: 2,
-                    name: 'Solid Wood Dining Table',
-                    description: 'Crafted from sustainable oak wood, this sturdy dining table seats up to 6 people. Features a minimalist design that complements various decor styles.',
-                    price: '₹18,500',
-                    image: sec='pic1.png' // Brown/warm white theme
-                },
-                {
-                    id: 3,
-                    name: 'Velvet Accent Chair',
-                    description: 'Add a touch of elegance with this luxurious velvet accent chair. Its ergonomic design and soft padding offer ultimate comfort. Available in multiple rich colors.',
-                    price: '₹9,200',
-                    image: sec='pic1.png' // Green/warm white theme
-                },
-                {
-                    id: 4,
-                    name: 'Industrial Bookshelf',
-                    description: 'A tall, open-concept bookshelf with metal frames and reclaimed wood shelves. Ideal for displaying books, decor, and plants in a loft or modern home.',
-                    price: '₹12,800',
-                    image: sec='pic1.png' // Grey/white theme
-                },
-                {
-                    id: 5,
-                    name: 'Comfort Plush Bed Frame (Queen)',
-                    description: 'A stylish and supportive queen-sized bed frame with a padded headboard, designed for maximum comfort and restful sleep. Easy assembly.',
-                    price: '₹20,000',
-                    image: sec='pic1.png' // Warm brown/light grey theme
-                },
-                {
                     id: 6,
-                    name: 'Minimalist Coffee Table',
-                    description: 'A sleek, low-profile coffee table with a tempered glass top and polished chrome legs. Perfect for modern living rooms, offering both style and functionality.',
-                    price: '₹7,500',
-                    image: sec='pic1.png' // Dark grey/white theme
+                    name: 'Study Table',
+                    description: 'Study Table with a sleek design, perfect for home or office use. Made from high-quality wood with a smooth finish. Ample space for books and a laptop.',
+                    price: '₹ 499',
+                    image: href='S-martLogo.jpg' // Warm brown/white theme
                 }
     ];
 
@@ -137,8 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>${product.description}</p>
             <p class="price">${product.price}</p>
             <div class="product-buttons">
-                <a href="https://wa.me/+917828706954?text=I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}%20(ID:%20${product.id})" class="btn btn-whatsapp" target="_blank">WhatsApp Us</a>
-                <a href="product-detailFurniture.html?id=${product.id}" class="btn btn-sell">Sell This</a>
+                <a href="https://wa.me/+916262686352?text=I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}%20(ID:%20${product.id})" class="btn btn-whatsapp" target="_blank">WhatsApp Us</a>
+                <a href="product-detailFurniture.html?id=${product.id}" class="btn btn-sell"> Buy Now</a>
             </div>
         `;
         productListDiv.appendChild(productCard);

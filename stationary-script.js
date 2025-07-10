@@ -2,46 +2,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const products = [
         {
             id: 1,
-            name: 'Premium Gel Pen Set',
-            description: 'A vibrant set of smooth-writing gel pens, perfect for notes, journaling, and creative projects. Quick-drying, fade-resistant ink.',
-            price: '₹299',
-            image: 'pic1.png' // Blue/dark grey theme
+            name: 'Spiral Notebook 300 Pages',
+            description: '300 pages Spiral Notebook with a durable cover and high-quality paper. Perfect for students and professionals alike.',
+            price: '₹ 110',
+            image: '300PageNotebook.jpg'
         }, 
         {
             id: 2,
-            name: 'Leatherette Journal (A5)',
-            description: 'Elegantly bound A5 journal with high-quality, acid-free paper. Ideal for writing, sketching, or planning. Features an elastic closure and ribbon bookmark.',
-            price: '₹549',
-            image: 'pic1.png' // Green/white theme
-        },
-        {
-            id: 3,
-            name: 'Colorful Sticky Notes Pack',
-            description: 'A collection of brightly colored sticky notes in various sizes and shapes. Perfect for reminders, organizing, and adding flair to your workspace.',
-            price: '₹120',
-            image: 'pic1.png' // Gold/purple theme
-        },
-        {
-            id: 4,
-            name: 'Ergonomic Desk Organizer',
-            description: 'Keep your desk clutter-free with this stylish and functional organizer. Multiple compartments for pens, clips, notes, and small accessories. Made from durable, eco-friendly materials.',
-            price: '₹899',
-            image: 'pic1.png' // Purple/white theme
+            name: 'Assignment Notebook "96 Pages"',
+            description: '96 pages Assignment Notebook with a sturdy cover and smooth paper. Ideal for organizing your assignments and notes.',
+            price: '₹ 30',
+            image: 'NoteBookAS.jpg'
         },
         {
             id: 5,
-            name: 'Art Sketchbook (Hardcover)',
-            description: 'Premium sketchbook with thick, textured paper suitable for pencils, charcoal, pastels, and light washes. Hardcover for durability and on-the-go creativity.',
-            price: '₹750',
-            image: 'pic1.png' // Blue/grey theme
-        },
-        {
-            id: 6,
-            name: 'Highlighter Assortment Pack',
-            description: 'A set of chisel-tip highlighters in fluorescent and pastel shades. Perfect for emphasizing text, color-coding, and artistic endeavors. Smudge-proof ink.',
-            price: '₹180',
-            image: 'logo.png' // Green/dark grey theme
-        }      
+            name: 'Spiral Notebook 200 Pages',
+            description: '200 pages Spiral Notebook with a durable cover and high-quality paper. Perfect for students and professionals alike.',
+            price: '₹ 80',
+            image: 'SpiralNotebook200.jpg'
+        }
+        
     ];
 
     const productListDiv = document.getElementById('product-list');
@@ -137,8 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>${product.description}</p>
             <p class="price">${product.price}</p>
             <div class="product-buttons">
-                <a href="https://wa.me/+917828706954?text=I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}%20(ID:%20${product.id})" class="btn btn-whatsapp" target="_blank">WhatsApp Us</a>
-                <a href="product-detailStationary.html?id=${product.id}" class="btn btn-sell">Sell This</a>
+                <a href="https://wa.me/+916262686352?text=I'm%20interested%20in%20the%20${encodeURIComponent(product.name)}%20(ID:%20${product.id})" class="btn btn-whatsapp" target="_blank">WhatsApp Us</a>
+                <a href="product-detailStationary.html?id=${product.id}" class="btn btn-sell"> Buy Now</a>
             </div>
         `;
         productListDiv.appendChild(productCard);

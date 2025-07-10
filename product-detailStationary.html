@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sell Your Product - Details</title>
-    <link rel="icon" href="https://th.bing.com/th/id/OIP.gp5F7b3A5S3WFd0HfWxgAQAAAA?w=227&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" type="image/x-icon">
+    <title>S-Mart Stationary Products</title>
+    <link rel="icon" href="S-martLogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
         /* Base styles - will be overridden by theme classes for stationery look */
@@ -435,47 +435,27 @@
             // Define your product data for a stationery store
             const allProductsData = [
                 {
-                    id: 1,
-                    name: 'Premium Gel Pen Set',
-                    description: 'A vibrant set of smooth-writing gel pens, perfect for notes, journaling, and creative projects. Quick-drying, fade-resistant ink.',
-                    price: '₹299',
-                    image: 'pic1.png' // Blue/dark grey theme
-                },
-                {
-                    id: 2,
-                    name: 'Leatherette Journal (A5)',
-                    description: 'Elegantly bound A5 journal with high-quality, acid-free paper. Ideal for writing, sketching, or planning. Features an elastic closure and ribbon bookmark.',
-                    price: '₹549',
-                    image: 'pic1.png' // Green/white theme
-                },
-                {
-                    id: 3,
-                    name: 'Colorful Sticky Notes Pack',
-                    description: 'A collection of brightly colored sticky notes in various sizes and shapes. Perfect for reminders, organizing, and adding flair to your workspace.',
-                    price: '₹120',
-                    image: 'pic1.png' // Gold/purple theme
-                },
-                {
-                    id: 4,
-                    name: 'Ergonomic Desk Organizer',
-                    description: 'Keep your desk clutter-free with this stylish and functional organizer. Multiple compartments for pens, clips, notes, and small accessories. Made from durable, eco-friendly materials.',
-                    price: '₹899',
-                    image: 'pic1.png' // Purple/white theme
-                },
-                {
-                    id: 5,
-                    name: 'Art Sketchbook (Hardcover)',
-                    description: 'Premium sketchbook with thick, textured paper suitable for pencils, charcoal, pastels, and light washes. Hardcover for durability and on-the-go creativity.',
-                    price: '₹750',
-                    image: 'pic1.png' // Blue/grey theme
-                },
-                {
-                    id: 6,
-                    name: 'Highlighter Assortment Pack',
-                    description: 'A set of chisel-tip highlighters in fluorescent and pastel shades. Perfect for emphasizing text, color-coding, and artistic endeavors. Smudge-proof ink.',
-                    price: '₹180',
-                    image: 'logo.png' // Green/dark grey theme
-                }
+             id: 1,
+             name: 'Spiral Notebook 300 Pages',
+             description: '300 pages Spiral Notebook with a durable cover and high-quality paper. Perfect for students and professionals alike.',
+             price: '₹ 110',
+             image: '300PageNotebook.jpg'
+        },
+        {
+            id: 2,
+            name: 'Assignment Notebook "96 Pages"',
+            description: '96 pages Assignment Notebook with a sturdy cover and smooth paper. Ideal for organizing your assignments and notes.',
+            price: '₹ 30',
+            image: 'NoteBookAS.jpg'
+        }, 
+        {
+         id: 5,
+                    name: 'Spiral Notebook 200 Pages',
+                    description: '200 pages Spiral Notebook with a durable cover and high-quality paper. Perfect for students and professionals alike.',
+                    price: '₹ 80',
+                    image: 'SpiralNotebook200.jpg'
+        }
+               
             ];
 
             let product = null;
@@ -590,7 +570,7 @@
                 }
 
                 // All details are valid, prepare email redirection
-                const recipientEmail = 'your_stationary_store_email@example.com'; // IMPORTANT: Replace with the email address where you want to receive inquiries
+                const recipientEmail = 'smartcollectionforme@gmail.com'; // IMPORTANT: Replace with the email address where you want to receive inquiries
                 const emailSubject = encodeURIComponent(`Stationery Sell Inquiry: ${product ? product.name : 'Unknown Product'} from ${name}`);
                 const emailBody = generateMailtoBody();
 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sell Your Product - Details</title>
-    <link rel="icon" href="https://th.bing.com/th/id/OIP.gp5F7b3A5S3WFd0HfWxgAQAAAA?w=227&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" type="image/x-icon">
+    <title>S-Mart Electronics Products</title>
+    <link rel="icon" href="S-martLogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
         /* Base styles - will be overridden by theme classes for electronics look */
@@ -432,45 +432,10 @@
             const allProductsData = [
                 {
                     id: 1,
-                    name: 'Latest Smartphone X',
-                    description: 'A powerful smartphone with a stunning OLED display, advanced camera system, and long-lasting battery. Experience lightning-fast performance and seamless multitasking.',
-                    price: '₹45,999',
-                    image: 'logo.png' // Placeholder image
-                },
-                {
-                    id: 2,
-                    name: 'Noise-Cancelling Headphones Pro',
-                    description: 'Immersive sound with industry-leading active noise cancellation. Enjoy crystal-clear audio and comfortable earcups for hours of listening pleasure. Perfect for travel and focus.',
-                    price: '₹12,499',
-                    image: 'logo.png'
-                },
-                {
-                    id: 3,
-                    name: 'Smartwatch Series 5',
-                    description: 'Track your steps, heart rate, sleep, and calories burned with precision. Syncs with your smartphone for detailed health insights and smart notifications. Water-resistant design.',
-                    price: '₹7,999',
-                    image: 'https://via.placeholder.com/200x200/007bff/ffffff?text=Smartwatch'
-                },
-                {
-                    id: 4,
-                    name: 'Portable Power Bank 20000mAh',
-                    description: 'Keep your devices charged on the go with this high-capacity power bank. Fast charging technology and multiple ports for convenience. Sleek and durable design.',
-                    price: '₹1,899',
-                    image: 'https://via.placeholder.com/200x200/007bff/ffffff?text=Power+Bank'
-                },
-                {
-                    id: 5,
-                    name: '4K Ultra HD Smart TV',
-                    description: 'Experience breathtaking visuals with vivid colors and incredible detail. Smart features allow you to stream your favorite content effortlessly. Immersive viewing experience.',
-                    price: '₹65,000',
-                    image: 'https://via.placeholder.com/200x200/007bff/ffffff?text=Smart+TV'
-                },
-                {
-                    id: 6,
-                    name: 'Gaming Laptop Xtreme',
-                    description: 'Unleash your gaming potential with this high-performance laptop. Featuring a powerful processor, dedicated graphics, and a fast refresh rate display. Designed for serious gamers.',
-                    price: '₹89,999',
-                    image: 'https://via.placeholder.com/200x200/007bff/ffffff?text=Gaming+Laptop'
+                    name: 'Hand Free',
+                    description: 'High-quality hand-free with noise isolation and clear sound. Perfect for calls and music on the go. Ergonomic design for comfort during long use.',
+                    price: '₹ 50 ',
+                    image: 'HandFree.png' // Placeholder image
                 }
             ];
 
@@ -586,7 +551,7 @@
                 }
 
                 // All details are valid, prepare email redirection
-                const recipientEmail = 'atultiwati997721@gmail.com'; // IMPORTANT: Replace with the email address where you want to receive inquiries
+                const recipientEmail = 'smartcollectionforme@gmail.com'; // IMPORTANT: Replace with the email address where you want to receive inquiries
                 const emailSubject = encodeURIComponent(`Sell Inquiry: ${product ? product.name : 'Unknown Product'} from ${name}`);
                 const emailBody = generateMailtoBody();
 

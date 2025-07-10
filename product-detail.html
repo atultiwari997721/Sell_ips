@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sell Your Product - Details</title>
-    <link rel="icon" href="https://th.bing.com/th/id/OIP.gp5F7b3A5S3WFd0HfWxgAQAAAA?w=227&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" type="image/x-icon">
+    <title>S-mart Products</title>
+    <link rel="icon" href="S-martLogo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
         /* Specific styles for product-detail.html */
@@ -244,7 +244,7 @@
 </head>
 <body>
     <header class="detail-header">
-        <h1>Sell Your Product</h1>
+        <h1>Thanks</h1>
         <p>Please confirm details and provide your contact information.</p>
     </header>
 
@@ -280,7 +280,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Electronics Exchange. All rights reserved.</p>
+        <p>&copy; 2025 S-Mart Electronics Exchange. All rights reserved.</p>
     </footer>
 
     <script>
@@ -316,38 +316,38 @@
             const allProductsData = [
                 {
                     id: 1,
-                    name: 'Stylish Watch',
-                    description: 'A classic and elegant watch suitable for all occasions. High-quality materials and durable design. Perfect for daily wear or special events.',
-                    price: '₹1,500',
-                    image: 'https://th.bing.com/th/id/OIP.gp5F7b3A5S3WFd0HfWxgAQAAAA?w=227&h=180&c=7&r=0&o=5&dpr=2&pid=1.7'
+                    name: 'Spiral Notebook 300 Pages',
+                    description: '300 pages Spiral Notebook with a durable cover and high-quality paper. Perfect for students and professionals alike.',
+                    price: '₹ 110',
+                    image: '300PageNotebook.jpg'
                 },
                 {
                     id: 2,
-                    name: 'Wireless Headphones',
-                    description: 'Immersive sound with active noise cancellation. Enjoy crystal-clear audio and comfortable earcups for hours of listening pleasure.',
-                    price: '₹2,999',
-                    image: 'https://th.bing.com/th/id/OIP.gp5F7b3A5S3WFd0HfWxgAQAAAA?w=227&h=180&c=7&r=0&o=5&dpr=2&pid=1.7'
-                },
-                {
-                    id: 3,
-                    name: 'Smart Fitness Tracker',
-                    description: 'Track your steps, heart rate, sleep, and calories burned with precision. Syncs with your smartphone for detailed health insights.',
-                    price: '₹999',
-                    image: 'https://th.bing.com/th/id/OIP.gp5F7b3A5S3WFd0HfWxgAQAAAA?w=227&h=180&c=7&r=0&o=5&dpr=2&pid=1.7'
+                    name: 'Assignment Notebook "96 Pages"',
+                    description: '96 pages Assignment Notebook with a sturdy cover and smooth paper. Ideal for organizing your assignments and notes.',
+                    price: '₹ 30',
+                    image: 'NoteBookAS.jpg'
                 },
                 {
                     id: 4,
-                    name: 'Portable Bluetooth Speaker',
-                    description: 'Powerful sound in a compact and durable design. Perfect for outdoor adventures or enhancing your home audio experience.',
-                    price: '₹1,250',
-                    image: 'https://th.bing.com/th/id/OIP.gp5F7b3A5S3WFd0HfWxgAQAAAA?w=227&h=180&c=7&r=0&o=5&dpr=2&pid=1.7'
+                    name: 'Hand Free ',
+                    description: 'High-quality hand-free with noise isolation and clear sound. Perfect for calls and music on the go. Ergonomic design for comfort during long use.',
+                    price: '₹ 50',
+                    image: 'HandFree.png'
+                },
+                {  id: 6,
+                    name: 'Study Table',
+                    description: 'Study Table with a sleek design, perfect for home or office use. Made from high-quality wood with a smooth finish. Ample space for books and a laptop.',
+                    price: '₹ 499',
+                    image: sec='S-martLogo.jpg' // Warm brown/white theme
+                    
                 },
                 {
                     id: 5,
-                    name: 'Designer Sunglasses',
-                    description: 'Protect your eyes with style and clarity. UV400 protection and a lightweight frame for all-day comfort.',
-                    price: '₹750',
-                    image: 'https://th.bing.com/th/id/OIP.gp5F7b3A5S3WFd0HfWxgAQAAAA?w=227&h=180&c=7&r=0&o=5&dpr=2&pid=1.7'
+                    name: 'Spiral Notebook 200 Pages',
+                    description: '200 pages Spiral Notebook with a durable cover and high-quality paper. Perfect for students and professionals alike.',
+                    price: '₹ 80',
+                    image: 'SpiralNotebook200.jpg'
                 },
                 { id: 6,
                     name: 'Atomic Habits',
@@ -443,7 +443,7 @@
 
             // Update WhatsApp link dynamically as user types
             contactForm.addEventListener('input', () => {
-                const whatsappPhoneNumber = '919876543210'; // Replace with your WhatsApp number
+                const whatsappPhoneNumber = '916262686352'; // Replace with your WhatsApp number
                 whatsappLink.href = `https://wa.me/${whatsappPhoneNumber}?text=${generateWhatsappMessage()}`;
             });
 
@@ -471,7 +471,7 @@
                 }
 
                 // All details are valid, prepare email redirection
-                const recipientEmail = 'your_store_email@example.com'; // IMPORTANT: Replace with the email address where you want to receive inquiries
+                const recipientEmail = 'smartcollectionforme@gmail.com'; // IMPORTANT: Replace with the email address where you want to receive inquiries
                 const emailSubject = encodeURIComponent(`Sell Inquiry: ${product ? product.name : 'Unknown Product'} from ${name}`);
                 const emailBody = generateMailtoBody();
 
